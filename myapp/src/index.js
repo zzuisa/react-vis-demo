@@ -8,6 +8,9 @@ import {
 import './index.css';
 import App from './App';
 import Heatmap from './components/Heatmap';
+import gra from './components/gra';
+import gra2 from './components/gra2';
+// 这里是将gr2 引入进来，不然无法职别这个组件
 import ShowForceGraph from './components/ShowForceGraph';
 import Scannerplot from './components/Scannerplot';
 import * as serviceWorker from './serviceWorker';
@@ -33,6 +36,8 @@ export default class Hello extends Component{
             　　　　　　<li><Link to="/ShowForceGraph" className="btn btn-outline-success btn-sm">ForceDirectedGraph</Link></li>
             　　　　　　<li><Link to="/Heatmap" className="btn btn-outline-success btn-sm">Heatmap</Link></li>
             　　　　　　<li><Link to="/Scannerplot" className="btn btn-outline-success btn-sm">Scannerplot</Link></li>
+            　　　　　　<li><Link to="/gra" className="btn btn-outline-success btn-sm">gra</Link></li>
+                      <li><Link to="/gra2" className="btn btn-outline-success btn-sm">gra2</Link></li>
         　　 　　　　</ul>
                     <hr />
                     <div className="con">
@@ -40,6 +45,8 @@ export default class Hello extends Component{
                     <Route path="/ShowForceGraph" component={ShowForceGraph} />
                     <Route path="/Heatmap" component={Heatmap} />
                     <Route path="/Scannerplot" component={Scannerplot} />
+                    <Route path="/gra" component={gra} />
+                    <Route path="/gra2" component={gra2} />
               
                     </div>
                     
