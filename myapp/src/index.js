@@ -9,8 +9,8 @@ import './index.css';
 import App from './App';
 import Heatmap from './components/Heatmap';
 import gra from './components/gra';
-import candlestick from './components/candlestick';
-// 这里是将candlestick 引入进来，不然无法职别这个组件
+import showGra2 from './components/showGra2';
+// 这里是将candlestick 引入进来，不然无法识别这个组件
 import ShowForceGraph from './components/ShowForceGraph';
 import Scannerplot from './components/Scannerplot';
 import * as serviceWorker from './serviceWorker';
@@ -37,7 +37,7 @@ export default class Hello extends Component{
             　　　　　　<li><Link to="/Heatmap" className="btn btn-outline-success btn-sm">Heatmap</Link></li>
             　　　　　　<li><Link to="/Scannerplot" className="btn btn-outline-success btn-sm">Scannerplot</Link></li>
             　　　　　　<li><Link to="/gra" className="btn btn-outline-success btn-sm">gra</Link></li>
-                      <li><Link to="/candlestick" className="btn btn-outline-success btn-sm">candlestick</Link></li>
+                      <li><Link to="/showGra2" className="btn btn-outline-success btn-sm">showGra2</Link></li>
         　　 　　　　</ul>
                     <hr />
                     <div className="con">
@@ -46,7 +46,7 @@ export default class Hello extends Component{
                     <Route path="/Heatmap" component={Heatmap} />
                     <Route path="/Scannerplot" component={Scannerplot} />
                     <Route path="/gra" component={gra} />
-                    <Route path="/candlestick" component={candlestick} />
+                    <Route path="/showGra2" component={showGra2} />
               
                     </div>
                     
